@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Version>1.0.0</Version>
+	</PropertyGroup>
+	
+	<PropertyGroup Condition=" '$(Configuration)' == Release">
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<!--<PackageOutputPath>\\1.1.1.1\nuget</PackageOutputPath>-->
+	</PropertyGroup>
+
+</Project>
