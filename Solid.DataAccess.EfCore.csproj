@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Version>1.0.0</Version>
+	</PropertyGroup>
+	
+	<PropertyGroup Condition=" '$(Configuration)' == Release">
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<!--<PackageOutputPath>\\1.1.1.1\nuget</PackageOutputPath>-->
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Solid.DataAccess.Abstraction\Solid.DataAccess.Abstraction.csproj" />
+	</ItemGroup>
+
+</Project>
