@@ -202,7 +202,7 @@ namespace Solid.DataAccess.EfCore
             if (keys != null)
             {
                 
-                var oldValues = context.Set<TEntity>().Find(keys);
+                var oldValues = dbSet.Find(keys);
 
                 context.Entry(oldValues).CurrentValues.SetValues(entityToUpdate);
             }
